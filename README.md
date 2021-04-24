@@ -1,0 +1,1 @@
+"#As writing the project , I'm inspired from Atil Samancioglu . But it was not plagiarised because I wrote my free codes into the project such as adding delete process, reloading recyclerview, working free layout that is not dependence on atil samancioglu's projects. additionally I'm a fan of atil samancioglu , this is my instructor. Thank you a lot ,Teacher." 

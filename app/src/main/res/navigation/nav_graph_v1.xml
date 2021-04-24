@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_v1"
+    app:startDestination="@id/theFragmentForMainScreenAndRecyclerView">
+    <fragment
+        android:id="@+id/theFragmentForMainScreenAndRecyclerView"
+        android:name="com.firstprojects.artbook_kotlin_using_fragments.fragments.TheFragmentForMainScreenAndRecyclerView"
+        android:label="fragment_the_for_main_screen_and_recycler_view"
+        tools:layout="@layout/fragment_the_for_main_screen_and_recycler_view" >
+        <action
+            android:id="@+id/action_theFragmentForMainScreenAndRecyclerView_to_theFragmentShowingSavedPictureNames"
+            app:destination="@id/theFragmentShowingSavedPictureNames" />
+        <action
+            android:id="@+id/action_theFragmentForMainScreenAndRecyclerView_to_theFragmentUploadingSelectedPictures"
+            app:destination="@id/theFragmentUploadingSelectedPictures" />
+    </fragment>
+    <fragment
+        android:id="@+id/theFragmentShowingSavedPictureNames"
+        android:name="com.firstprojects.artbook_kotlin_using_fragments.fragments.TheFragmentShowingSavedPictureNames"
+        android:label="fragment_the_showing_saved_picture_names"
+        tools:layout="@layout/fragment_the_showing_saved_picture_names" >
+        <action
+            android:id="@+id/action_theFragmentShowingSavedPictureNames_to_theFragmentForMainScreenAndRecyclerView"
+            app:destination="@id/theFragmentForMainScreenAndRecyclerView" />
+        <argument
+            android:name="getDataModel"
+            app:argType="com.firstprojects.artbook_kotlin_using_fragments.model.InformationAboutPicturesModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/theFragmentUploadingSelectedPictures"
+        android:name="com.firstprojects.artbook_kotlin_using_fragments.fragments.TheFragmentUploadingSelectedPictures"
+        android:label="fragment_the_uploading_selected_pictures"
+        tools:layout="@layout/fragment_the_uploading_selected_pictures" >
+        <action
+            android:id="@+id/action_theFragmentUploadingSelectedPictures_to_theFragmentForMainScreenAndRecyclerView"
+            app:destination="@id/theFragmentForMainScreenAndRecyclerView" />
+    </fragment>
+</navigation>

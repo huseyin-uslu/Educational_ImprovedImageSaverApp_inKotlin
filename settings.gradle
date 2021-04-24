@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "artbook_kotlin_using_fragments"
